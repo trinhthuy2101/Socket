@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infomation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            position: relative;
+        }
+        
+        .background{
+            background-image: url(background.jpg);
+            width: 100%;
+            height: 720px;
+            background-size: cover;
+            background-position-x: center;
+            background-position-y: center;
+            
+        }
+        
+        .content{
+            width: 1000px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        
+        }
+        
+        h1{
+            width: 276px;
+            font-size: 45px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid ;
+            text-align: center;
+        }
+        
+        .box{
+            width: 100%;
+            height: 200px;
+            margin: 25px auto;
+            padding: 5px;
+            display: inline-flex;
+            border-radius: 10px;
+            background-color:black;
+            border:3px solid  midnightblue;
+            position: relative;
+            color:white;
+        }
+        
+        .box .left{
+            margin-right: 100px;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+        
+        .box .left img{
+            width: 150px;
+            height: auto;
+            transition: 0.5s;
+        }
+        
+        .box .right{
+            width: 600px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .box .right p{
+            margin: 5px auto;
+        }
+        
+        
+        .box .right .name{
+            color:white;
+            border-bottom: 2px solid midnightblue;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        input[type=submit]{
+          background-color: pink;
+          width: 30%;
+          color:black;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: 3px solid palevioletred;
+          cursor: pointer;
+        }
+  
+      input[type=submit]:hover{
+      cursor: pointer;
+      background-color: palevioletred;
+      }
+    </style>
+</head>
+<body> 
+    <div class="background"></div>
+    <div class="content">
+        <h1>INFOMATION</h1>
+        <div class="box">
+            <div class="left">
+                <img src="19120390.jpg" alt="">
+            </div>
+            <div class="right">
+                <p class = "name">Trinh Thi Thuy</p>
+                <ul>
+                    <li> University of Science National University-HCM</li>
+                    <li> Student ID: 19120390</li>
+                    <li>Life's quotes: "You only live once, but if you do it right, once is enough"</li>
+                  </ul>
+            </div>
+
+        </div>
+
+        <div class="box">
+            <div class="left">
+                <img src="19120330.jpg" alt="">
+            </div>
+            <div class="right">
+                <p class = "name">Nguyen Doan Phuc</p>
+                <ul>
+                    <li> University of Science National University-HCM</li>
+                    <li> Student ID: 19120330</li>
+                    <li> Life's quote:“The purpose of our lives is to be happy.”</li>
+                  </ul>
+            </div>
+        </div>
+        <div class="download">
+            <form action="files.html" method="GET">
+                <input type="submit" value="Download file here!">
+             </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
